@@ -15,19 +15,19 @@ pip install -r requirements.txt
 Uzip the dataset and internal folders, write the resulting path into utils.py as the `data_path` variable
 
 ## Model path
-The best performing model is in `models\resnet152_45model.pt`
+Models will be saved in the models is in `models\` directory.
 
 ## Training
 
 To train the model, run 
 ```
-python train.py
+python code\train.py
 ```
-
+This will result in ``models\resnet152_45model.pt` and `models\resnet152_45model_answer.txt` files
 ## Reproduce Submission Results
 
-To repeat the inferencing results, run
+To repeat the inferencing results without training, run
 ``` 
-python inference.py
+python code\inference.py
 ```
-The best performing model name is already written there. It will produce a file named `resnet152_45model_answer.txt`, which is the inference result. You need to rename it to `answer.txt` and submit it as a .zip archive
+The best performing model name is already written there. It will produce a file named `resnet152_45model_answer.txt` in the `models\` folder, which is the inference result. You need to rename it to `answer.txt` and submit it as a .zip archive
