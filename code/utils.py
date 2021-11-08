@@ -57,8 +57,8 @@ test_transforms = A.Compose(
 ####################################################
 def init_dataset_info(dataset_path):
 
-    train_data_path = os.path.join(dataset_path, 'train')
-    test_data_path = os.path.join(dataset_path, 'test')
+    train_data_path = os.path.join(dataset_path, 'training_images')
+    test_data_path = os.path.join(dataset_path, 'testing_images')
     training_labels_path =os.path.join(dataset_path, 'training_labels.txt')
     classes_path = os.path.join(dataset_path, 'classes.txt')
     # train_data_path = '/content/drive/Shareddrives/Stuff/Datasets/2021VRDL_HW1_dataset/train' 
